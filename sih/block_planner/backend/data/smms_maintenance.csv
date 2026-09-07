@@ -1,0 +1,7 @@
+task_id,asset_id,corridor_id,department,defect_description,severity,reported_date_offset_days,overdue_days,estimated_repair_hours,min_block_duration_hours
+SMMS001,A008,C4,Signal,Interlocking relay failure,Major,7,8,1.5,2.5
+SMMS002,A002,C1,Signal,Signal lamp degradation,Minor,30,2,1.0,1.5
+SMMS003,A005,C3,Signal,Relay contact resistance high,Minor,14,1,1.0,1.5
+SMMS004,A015,C2,Signal,Signal cable insulation breakdown,Critical,2,14,2.0,2.5
+SMMS005,A011,C5,Signal,Point machine sluggish operation,Major,9,6,1.5,2.0
+SMMS006,A008,C4,Signal,Track circuit intermittent failure,Critical,4,18,2.0,2.0

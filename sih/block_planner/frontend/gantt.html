@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gantt plan — Glass-Box Scheduler</title>
+  <meta name="description" content="Interactive Gantt chart showing the optimized block schedule with department color-coding and corridor schematic.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist@2.35.3/plotly.min.js"></script>
+</head>
+<body>
+
+  <nav class="console-nav">
+    <a href="index.html" class="brand"><span class="dot"></span>Glass-Box Scheduler</a>
+    <div class="nav-links"></div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Optimized schedule</h1>
+    <div class="subtitle" id="gantt-subtitle">Gantt chart of resolved maintenance blocks</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="toolbar__label">Corridor</span>
+    <select id="corridor-select"></select>
+    <span class="toolbar__label">View</span>
+    <button class="btn btn--outline active" id="btn-weekly" onclick="setHorizon('weekly')">Weekly</button>
+    <button class="btn btn--outline" id="btn-monthly" onclick="setHorizon('monthly')">Monthly</button>
+    <span class="toolbar__label">Department</span>
+    <select id="dept-filter">
+      <option value="">All departments</option>
+      <option value="Engineering">Engineering</option>
+      <option value="Signal">Signal</option>
+      <option value="Traction">Traction</option>
+    </select>
+  </div>
+
+  <!-- Corridor schematic -->
+  <div class="panel" id="track-panel">
+    <div class="panel-title">
+      <h2>Corridor status</h2>
+    </div>
+    <div id="gantt-track-schematic"></div>
+  </div>
+
+  <!-- Gantt chart -->
+  <div class="panel">
+    <div class="gantt-container" id="gantt-chart"></div>
+  </div>
+
+  <!-- Schedule table -->
+  <div class="panel">
+    <div class="panel-title">
+      <h2>Schedule details</h2>
+      <span class="meta" id="schedule-meta"></span>
+    </div>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Request</th>
+            <th>Corridor</th>
+            <th>Department</th>
+            <th>Severity</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Duration</th>
+            <th>Score</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="schedule-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/gantt.js"></script>
+</body>
+</html>

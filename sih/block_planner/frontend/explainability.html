@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explainability — Glass-Box Scheduler</title>
+  <meta name="description" content="See why each maintenance task got its priority score — full breakdown of severity, overdue, and criticality components.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="console-nav">
+    <a href="index.html" class="brand"><span class="dot"></span>Glass-Box Scheduler</a>
+    <div class="nav-links"></div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Priority explainability</h1>
+    <div class="subtitle">score = (severity \u00d7 3) + (overdue \u00d7 0.5) + (criticality \u00d7 2)</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="toolbar__label">Corridor</span>
+    <select id="corridor-select"></select>
+  </div>
+
+  <div class="panel">
+    <div class="data-table-wrap">
+      <table class="data-table" id="priority-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Request</th>
+            <th>Task</th>
+            <th>Corridor</th>
+            <th>Department</th>
+            <th>Severity</th>
+            <th>Overdue</th>
+            <th>Criticality</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody id="priority-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/explainability.js"></script>
+</body>
+</html>

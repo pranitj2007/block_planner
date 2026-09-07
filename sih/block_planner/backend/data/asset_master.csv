@@ -1,0 +1,21 @@
+asset_id,corridor_id,corridor_name,department,asset_type,install_year,criticality_level
+A001,C1,Delhi-Agra Corridor,Engineering,Track Section,2015,High
+A002,C1,Delhi-Agra Corridor,Signal,Signal Box,2018,Medium
+A013,C1,Delhi-Agra Corridor,Traction,OHE Section,2013,High
+A019,C1,Delhi-Agra Corridor,Engineering,Level Crossing,2014,Medium
+A003,C2,Mumbai-Pune Corridor,Engineering,Bridge,2010,High
+A004,C2,Mumbai-Pune Corridor,Traction,OHE Section,2016,Medium
+A015,C2,Mumbai-Pune Corridor,Signal,Signal Box,2017,Low
+A018,C2,Mumbai-Pune Corridor,Engineering,Tunnel,2005,High
+A005,C3,Chennai-Bangalore Corridor,Signal,Relay Room,2019,Low
+A006,C3,Chennai-Bangalore Corridor,Engineering,Track Section,2012,High
+A014,C3,Chennai-Bangalore Corridor,Traction,Transformer,2015,Medium
+A020,C3,Chennai-Bangalore Corridor,Engineering,Culvert,2011,Low
+A007,C4,Howrah-Delhi Corridor,Engineering,Track Section,2008,High
+A008,C4,Howrah-Delhi Corridor,Signal,Interlocking System,2014,High
+A009,C4,Howrah-Delhi Corridor,Traction,OHE Section,2011,High
+A010,C4,Howrah-Delhi Corridor,Engineering,Bridge,2006,Medium
+A016,C4,Howrah-Delhi Corridor,Traction,Transformer,2009,Medium
+A011,C5,Secunderabad-Kazipet Corridor,Signal,Interlocking System,2017,Medium
+A012,C5,Secunderabad-Kazipet Corridor,Traction,PSI Equipment,2020,Low
+A017,C5,Secunderabad-Kazipet Corridor,Engineering,Track Section,2016,High

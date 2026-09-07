@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact quantification — Glass-Box Scheduler</title>
+  <meta name="description" content="Quantifiable before/after comparison proving the efficiency of Glass-Box AI Block Scheduling over manual FCFS scheduling.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="console-nav">
+    <a href="index.html" class="brand"><span class="dot"></span>Glass-Box Scheduler</a>
+    <div class="nav-links"></div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Impact quantification</h1>
+    <div class="subtitle">Manual baseline (FCFS) vs Glass-Box AI scheduler</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="toolbar__label">Corridor</span>
+    <select id="corridor-select"></select>
+    <span class="meta" style="margin-left:auto">Defaults to C4 (Howrah-Delhi) for demo</span>
+  </div>
+
+  <!-- Impact headline -->
+  <div class="impact-headline" id="impact-headline-box">
+    <div class="impact-headline__stat" id="impact-headline-stat">Loading impact metrics\u2026</div>
+    <div class="impact-headline__text" id="impact-headline-text">Quantifying AI optimization benefits over manual scheduling</div>
+  </div>
+
+  <!-- KPI comparison -->
+  <div class="kpi-row" id="impact-kpi-row"></div>
+
+  <!-- Visual metric comparisons -->
+  <div id="impact-metrics-grid"></div>
+
+  <!-- Detailed comparison table -->
+  <div class="panel">
+    <div class="panel-title">
+      <h2>Detailed metric comparison</h2>
+      <span class="meta">Baseline vs optimized</span>
+    </div>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Performance indicator</th>
+            <th>Manual baseline (FCFS)</th>
+            <th>Glass-Box AI (optimized)</th>
+            <th>Net improvement</th>
+            <th>Operational impact</th>
+          </tr>
+        </thead>
+        <tbody id="impact-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/impact.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+task_id,asset_id,corridor_id,department,defect_description,severity,reported_date_offset_days,overdue_days,estimated_repair_hours,min_block_duration_hours
+TDMS001,A009,C4,Traction,OHE wire sag exceeding limits,Critical,6,12,2.0,2.5
+TDMS002,A004,C2,Traction,OHE mast foundation cracking,Major,18,7,2.0,2.0
+TDMS003,A014,C3,Traction,Transformer oil level low,Major,11,9,1.5,2.0
+TDMS004,A012,C5,Traction,PSI calibration drift,Minor,22,4,1.0,1.5
+TDMS005,A013,C1,Traction,OHE insulator flashover marks,Critical,3,18,2.0,2.0
+TDMS006,A016,C4,Traction,Transformer bushing degradation,Minor,28,5,1.5,1.5

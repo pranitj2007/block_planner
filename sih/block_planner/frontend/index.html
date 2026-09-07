@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass-Box Scheduler — Dashboard</title>
+  <meta name="description" content="Railway dispatcher console for AI-powered block scheduling across Indian Railways corridors.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="console-nav">
+    <a href="index.html" class="brand"><span class="dot"></span>Glass-Box Scheduler</a>
+    <div class="nav-links"></div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Block scheduler overview</h1>
+    <div class="subtitle" id="header-subtitle">Loading corridor data\u2026</div>
+  </div>
+
+  <!-- KPI stats -->
+  <div class="kpi-row" id="kpi-row"></div>
+
+  <!-- Corridor schematic (hero element) -->
+  <div class="panel" id="corridor-panel">
+    <div class="panel-title">
+      <h2>Corridor schedule</h2>
+      <div>
+        <select id="corridor-select"></select>
+      </div>
+    </div>
+    <div id="corridor-schematic">
+      <div class="loading-state"><div class="loading-spinner"></div><span>Loading schedule\u2026</span></div>
+    </div>
+  </div>
+
+  <!-- Department + severity breakdown -->
+  <div class="two-col">
+    <div class="panel" id="dept-panel">
+      <div class="panel-title">
+        <h2>Departments</h2>
+        <span class="meta" id="dept-meta"></span>
+      </div>
+      <div id="dept-rows"></div>
+    </div>
+
+    <div class="panel" id="severity-panel">
+      <div class="panel-title">
+        <h2>Severity breakdown</h2>
+        <span class="meta" id="severity-meta"></span>
+      </div>
+      <div id="severity-rows"></div>
+    </div>
+  </div>
+
+  <!-- Conflict hotspots -->
+  <div class="panel" id="conflict-panel">
+    <div class="panel-title">
+      <h2>Conflict hotspots</h2>
+      <span class="meta" id="conflict-meta"></span>
+    </div>
+    <div id="conflict-rows"></div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

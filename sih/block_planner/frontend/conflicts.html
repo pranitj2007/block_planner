@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conflict resolution — Glass-Box Scheduler</title>
+  <meta name="description" content="Before and after view of scheduling conflicts — see which department won each slot and why.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="console-nav">
+    <a href="index.html" class="brand"><span class="dot"></span>Glass-Box Scheduler</a>
+    <div class="nav-links"></div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Conflict resolution</h1>
+    <div class="subtitle">Before / after comparison of inter-department block clashes</div>
+  </div>
+
+  <div class="toolbar">
+    <span class="toolbar__label">Corridor</span>
+    <select id="corridor-select"></select>
+  </div>
+
+  <div id="conflicts-container">
+    <div class="loading-state"><div class="loading-spinner"></div><span>Loading conflict data\u2026</span></div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/conflicts.js"></script>
+</body>
+</html>

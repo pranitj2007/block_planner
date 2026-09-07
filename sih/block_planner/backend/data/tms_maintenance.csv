@@ -1,0 +1,9 @@
+task_id,asset_id,corridor_id,department,defect_description,severity,reported_date_offset_days,overdue_days,estimated_repair_hours,min_block_duration_hours
+TMS001,A007,C4,Engineering,Rail fracture detected at km 342,Critical,5,15,2.5,3.0
+TMS002,A010,C4,Engineering,Bridge pier erosion — monsoon damage,Minor,20,3,1.5,1.5
+TMS003,A001,C1,Engineering,Track geometry deterioration,Major,12,5,2.0,2.0
+TMS004,A003,C2,Engineering,Bridge deck corrosion,Critical,3,20,3.0,3.0
+TMS005,A006,C3,Engineering,Track buckling risk — summer heat,Major,8,10,2.5,2.5
+TMS006,A018,C2,Engineering,Tunnel seepage and lining cracks,Major,15,7,2.0,2.0
+TMS007,A017,C5,Engineering,Rail wear exceeding limits,Major,10,6,1.5,2.0
+TMS008,A007,C4,Engineering,Weld joint inspection overdue,Major,25,11,2.0,2.0
