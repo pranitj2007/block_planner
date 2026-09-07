@@ -2,6 +2,7 @@ services:
   - type: web
     name: glassbox-scheduler
     env: python
+    plan: free
     rootDir: sih/block_planner
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn --chdir backend app:app
