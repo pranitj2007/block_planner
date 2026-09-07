@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadTable(corridor) {
   const tbody = document.getElementById('priority-tbody');
-  showLoading(tbody.parentElement.parentElement);
+  tbody.innerHTML = '<tr><td colspan="9" style="text-align:center; padding:20px;"><div class="loading-spinner" style="display:inline-block; vertical-align:middle; margin-right:10px;"></div> Loading data...</td></tr>';
 
   try {
     const data = await api.priority({ corridor: corridor || undefined });
